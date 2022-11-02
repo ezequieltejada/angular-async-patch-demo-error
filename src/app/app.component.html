@@ -1,0 +1,26 @@
+<h1>Demo</h1>
+<form [formGroup]="form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Business Name</mat-label>
+    <input
+      matInput
+      placeholder="Dummy Business"
+      formControlName="businessName"
+    />
+  </mat-form-field>
+  <br />
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Business Slug Name</mat-label>
+    <mat-hint>Should fail with "test-name"</mat-hint>
+    <input
+      matInput
+      placeholder="Dummy Business"
+      formControlName="businessSlug"
+    />
+    <mat-error>Business Name already in use</mat-error>
+  </mat-form-field>
+</form>
+<h2>Value</h2>
+<pre>{{ form.value | json }}</pre>
+<h2>Status</h2>
+<pre>{{ form.status | json }}</pre>
