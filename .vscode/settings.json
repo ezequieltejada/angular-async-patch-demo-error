@@ -366,4 +366,8 @@
    * - 21: White on black or black on white.
    */
   // "terminal.integrated.minimumContrastRatio": 4.5
+  "files.exclude": {
+      "node_modules/": true,
+      "**/._*": true
+  }
 }
